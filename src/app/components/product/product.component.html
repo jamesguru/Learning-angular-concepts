@@ -1,0 +1,22 @@
+
+<div class="products" *ngIf="books; else noProduct">
+
+
+        <div class="product" *ngFor="let book of books; let i = index">
+    
+            <img [src]="book.img" alt="no photo" height="350" width="350px" />
+            <span class="title">{{book.title}}</span>
+            <span class="price">Ksh {{book.price }} </span>
+
+            <button class="add-cart" (onclick) ="addCart()">Add cart</button>
+        </div>
+
+
+</div>
+
+<ng-template #noProduct>
+    <p>Hip!</p>
+</ng-template>
+
+
+
