@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300&display=swap');
 
-.products{
 
-    margin: 50px;
-
-    display: flex;
-
-    justify-content: space-evenly;
-
-    flex-wrap: wrap;
-    font-family: 'Roboto Slab', serif;
-}
 
 .product{
 

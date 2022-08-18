@@ -1,5 +1,18 @@
 
+   <div class="products">
+
+
+    <ng-container *ngFor="let book of books; let i = index">
+
+
+        <app-product [book] = "book" (addToCart)="addCart($event)"></app-product>
+
+
+    </ng-container>
+
+                    
+
+   </div>
    
-   <app-product [books] = "books" (addToCart)="addCart()"></app-product>
 
 

@@ -12,13 +12,10 @@ export class ProductComponent implements OnInit {
   constructor() { }
 
 
-  @Input() books!:Book[];
+  @Input() book!:Book;
   @Output() addToCart = new EventEmitter<Book>();
 
-  title!: string;
-  img!:string;
-  price!:number;
-
+  
 
   ngOnInit(): void {
   }
@@ -26,12 +23,7 @@ export class ProductComponent implements OnInit {
   addCart(){
 
 
-    this.addToCart.emit({
-
-      title:"",
-      img:"",
-      price:0
-    })
+    this.addToCart.emit(this.book)
 
     
 
