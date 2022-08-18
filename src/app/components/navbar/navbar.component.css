@@ -21,6 +21,22 @@
     
 }
 
+a{
+
+    text-decoration: none;
+
+    margin: 30px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+a:hover{
+
+    text-decoration: underline;
+}
+
 .logo{
 
     font-weight: 900;

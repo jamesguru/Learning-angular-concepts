@@ -3,19 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BooksModule } from './components/products/books/books.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ProductComponent } from './components/product/product.component';
-import { ProductsComponent } from './components/products/products.component';
+import { LoginComponent } from './components/login/login.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProductComponent,
-    ProductsComponent
+    LoginComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    BooksModule,
     AppRoutingModule
   ],
   providers: [],
