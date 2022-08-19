@@ -27,21 +27,39 @@ export class ProductsComponent implements OnInit {
    }
 
 
+   showProduct:boolean = false;
+
+
+   name:string = '';
+   img:string = '';
+   price!:number;
+
+
    cart:Book[] = this.cartService.getCartBooks();
 
 
    addCart(event:Book){
+
+
+    this.showProduct = true;
+
+    this.name = event.title;
+    this.img = event.img;
+
+    this.price = event.price;
 
     this.cartService.addTocart(event)
     
   
   }
 
+  Close(){
 
 
- 
+    this.showProduct=false;
+  }
 
-  
+
 
   ngOnInit(): void {
   }

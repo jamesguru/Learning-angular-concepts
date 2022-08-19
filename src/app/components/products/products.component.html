@@ -10,6 +10,24 @@
 
     </ng-container>
 
+
+
+    <div class="product" *ngIf="showProduct">
+
+
+        <img [src]="img" alt="">
+
+
+        <h3>{{name}}</h3>
+
+        <span>{{price}}</span>
+
+        <button class="close" (click)="Close()">Close</button>
+
+
+
+    </div>
+
                     
 
    </div>
