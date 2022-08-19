@@ -69,4 +69,32 @@ a:hover{
 .cart{
 
     font-size: 20px;
+
+    position: relative;
+}
+
+.cart-item{
+
+    position: relative;
+}
+
+.cart-number{
+
+
+    position: absolute;
+        font-weight: 900;
+    top: -10px;
+
+    right: -17px;
+    color: #d1411e;
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
 }
