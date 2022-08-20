@@ -7,6 +7,8 @@ import { BooksModule } from './components/products/books/books.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { SinglebookComponent } from './components/singlebook/singlebook.component';
+import { AddbookComponent } from './components/addbook/addbook.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { SinglebookComponent } from './components/singlebook/singlebook.componen
     NavbarComponent,
     LoginComponent,
     SinglebookComponent,
+    AddbookComponent,
+   
     
     
   ],
@@ -22,7 +26,8 @@ import { SinglebookComponent } from './components/singlebook/singlebook.componen
     BrowserModule,
     AppRoutingModule,
     BooksModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

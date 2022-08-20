@@ -16,6 +16,12 @@ export class SinglebookComponent implements OnInit {
   id!:number;
   book!:Book;
 
+  title!:string;
+  price!:number;
+  img!:string;
+
+  
+
   
 
   ngOnInit(): void {
@@ -23,12 +29,16 @@ export class SinglebookComponent implements OnInit {
 
     this.route.params.subscribe((value:Params) => {
 
-      this.id = value['index'];
+      this.id = value['id'];
 
-      this.book =this.bookService.getBook(this.id)
+      this.book =this.bookService.getBook(this.id);
 
+      this.title=this.book.title;
+      this.img=this.book.img;
+      this.price=this.book.price;
+      
 
-      console.log(this.book)
+  
     })
   }
 

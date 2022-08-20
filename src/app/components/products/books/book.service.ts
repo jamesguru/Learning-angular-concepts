@@ -72,6 +72,15 @@ getBooks(){
 }
 
 
+addBook(book:Book){
+
+
+  this.books.push(book);
+
+
+}
+
+
 getBook(index:number){
 
 return this.books[index]
