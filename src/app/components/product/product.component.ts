@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
+import { setupTestingRouterInternal } from '@angular/router/testing';
 
 import Book from '../../interface/Book';
 
@@ -9,10 +11,16 @@ import Book from '../../interface/Book';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+
+
+    private router:Router
+  ) { }
 
 
   @Input() book!:Book;
+  @Input() index!:number;
+
   @Output() addToCart = new EventEmitter<Book>();
 
   
@@ -20,10 +28,20 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
+disabled = false;
+
+goToProduct(index:number){
+
+this.router.navigate(['book',index]);
+
+}
+
   addCart(){
 
 
     this.addToCart.emit(this.book)
+
+    this.disabled=true;
 
     
 

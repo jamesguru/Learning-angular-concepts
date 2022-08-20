@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BooksModule } from './components/products/books/books.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
+import { SinglebookComponent } from './components/singlebook/singlebook.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { LoginComponent } from './components/login/login.component';
     AppComponent,
     NavbarComponent,
     LoginComponent,
+    SinglebookComponent,
     
     
   ],

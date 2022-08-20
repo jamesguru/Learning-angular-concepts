@@ -1,14 +1,15 @@
 
 <div class="product" >
     
-            <img [src]="book.img" alt="no photo" height="350" width="350px" />
+            
+            <img [src]="book.img" alt="no photo" height="350" width="350px" (click)="goToProduct(index)" />
             <span class="title">{{book.title}}</span>
             <span class="price">Ksh {{book.price }} </span>
 
-            <button class="add-cart" (click) ="addCart()">Add to cart</button>
+            <button class="add-cart" (click) ="addCart()">Show more</button>
 </div>
 
-
+ 
 
 
 

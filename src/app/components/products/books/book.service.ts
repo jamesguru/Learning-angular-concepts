@@ -71,4 +71,10 @@ getBooks(){
 
 }
 
+
+getBook(index:number){
+
+return this.books[index]
+}
+
 }
